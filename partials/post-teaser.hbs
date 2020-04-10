@@ -1,17 +1,5 @@
 <article class="post-teaser {{post_class}} container">
 
-  {{#if feature_image}}
-    <div class="post-teaser__thumbnail" id="{{url}}-post-thumbnail">
-      <img class="post-card-image"
-        srcset="{{img_url feature_image size="xs"}} 400w,
-                {{img_url feature_image size="s"}} 600w,
-                {{img_url feature_image size="m"}} 800w"
-        src="{{img_url feature_image size="m"}}"
-        alt="{{title}}"
-      />
-    </div>
-  {{/if}}
-
   <div class="post-teaser__text-container">
     <header class="post-teaser__header">
 
@@ -27,7 +15,7 @@
 
     <div class="post-teaser__excerpt">
       <p>
-        {{excerpt words="33"}}
+        {{excerpt words="150"}}
         <span class="read-more">…
           <a class="read-more__link" href="{{url}}">
             <span>read&nbsp;more&nbsp;&raquo;</span>

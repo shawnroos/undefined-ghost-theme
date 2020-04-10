@@ -1,7 +1,8 @@
 /* Put your styles (or personal collection of CSS frameworks) here */
 
 body {
-  max-width: 800px;
+  width: 75vw;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   line-height: 1.5;
@@ -24,28 +25,26 @@ figcaption {
   display: inline-block;
 }
 
+figure.kg-width-full {
+  width: 75vw;
+  position: relative;w
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
 
-/* IMAGE WIDTH STYLES */
-/* ================== */
 
-/* Style at will... */
-/* figure.kg-width-full { } */
-/* figure.kg-width-wide { } */
-/*
-PROTIP:
-Try something like as a starting point for centering images that are wider than their parent container's width:
+figure.kg-width-wide {
+  width: 80vw;
+  position: relative;
+  left: 25%;
+  right: 25%;
+  margin-left: -25vw;
+  margin-right: -25vw;
+}
 
-.full-bleed {
-	  width: 100vw;
-	  position: relative;
-	  left: 50%;
-	  right: 50%;
-	  margin-left: -50vw;
-	  margin-right: -50vw;
-	}
 
-For large images that aren't full width, but are larger than their parent, just replace 100vw with your max width (say, 1000px), and then replace the -50vw margins with -{NUM}px / 2 (in this case, -500px). You can see a version of this techinique in action in the stylesheet of my MNML Ghost theme:
-https://github.com/curiositry/mnml-ghost-theme
 */
 
 /* IMAGE GALLERY STYLES */
@@ -90,6 +89,22 @@ The example implementation in the Ghost docs isn't bad, although you may want to
 Want something a bit leaner? You can drop the snippet I used in my premium Weblog theme that right in here! Here it is: https://gist.github.com/curiositry/511c84204f136a97d65cf77a39b230bf
 */
 
+
+/* TYPOGRAPHY */
+/* ========== */
+
+
+.post-teaser__title{
+  font-size:calc(40px + 3vw);
+  letter-spacing:calc(-0.06vw);
+  line-height:calc(40px + 3vw);
+}
+
+.post-teaser__excerpt{
+  font-size:calc(18px + 1vw);
+  letter-spacing:calc(-0.06vw);
+  line-height:calc(18px + 1.75vw);
+}
 
 /* SUBSCRIPTION & MEMBERSHIP STYLES */
 /* ================================= */
