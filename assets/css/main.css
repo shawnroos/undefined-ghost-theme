@@ -6,6 +6,7 @@ body {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  font-family: 'Heebo', sans-serif;
   line-height: 1.5;
 }
 
@@ -37,7 +38,9 @@ img {
 h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
-  display: block;
+  display: block; 
+  margin-block-start:0.3vh;
+  margin-block-end: 0.3vh;
   font-size: 2em;
   font-weight: bold;
 }
@@ -48,9 +51,6 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-family: 'Heebo', sans-serif;
-  width: 100%;
-  font-size: 1.375em;
-  line-height: 1.5;
   font-weight: 300;
 }
 
@@ -133,34 +133,45 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
 
 
 h2.post-teaser__title{
+  margin:1.2vh 0vh 1.2vh; 
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
-  margin-block-start: 3.5vh;
-  margin-block-end: 3.5vh;
-  font-size:calc(40px + 4vw);
+  font-size:calc(48px + 4vw);
   letter-spacing:-0.4vw;
   line-height:calc(40px + 4vw);
 }
 
 .post-teaser__excerpt{
   margin-block-start:2.5vh;
-  margin-block-end:0px;
+  margin-block-end:1.5vh;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-family: 'Heebo', sans-serif;
-  font-size: calc(16px + 0.6vw);
+  font-size: calc(16px + 0.9vw);
   letter-spacing: -0.08vw;
   line-height: 1.75;
   font-weight: 300;
   color: #646262;
 }
 
+.post-teaser__meta{
+  text-transform: uppercase;
+  color: #5C5C5C;
+  font-family: 'IBM Plex Sans', sans-serif;
+  letter-spacing: 0.15rem;
+  width: calc(100% + 0.15rem);
+  font-size:calc(10px + 0.1.5vw) ;
+  line-height: 1.625;
+  font-weight: 700;
+}
+
 .read-more__link{
   font-family: 'Heebo', sans-serif;
-  font-size: calc(16px + 0.6vw);
+  font-size: calc(16px + 0.9vw);
   letter-spacing: -0.08vw;
   line-height: 1.75;
   font-weight: 300;
+  color: #646262;
 }
 
 .post-teaser__text-container{
@@ -168,8 +179,10 @@ h2.post-teaser__title{
   margin-block-end: 5vh; 
 }
 
-
-
+.post-teaser__header{
+  margin-block-start:0.3vh;
+  margin-block-end: 2vh;
+}
 
 
 

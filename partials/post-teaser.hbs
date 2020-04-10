@@ -1,18 +1,26 @@
 <article class="post-teaser {{post_class}} container">
-
   <div class="post-teaser__text-container">
     <header class="post-teaser__header">
-
       <h2 class="post-teaser__title">
         <a href="{{url}}">
           {{title}}
         </a>
       </h2>
+      <div class="post-teaser__meta">
+            {{#if tags}}
+        <span class="post-teaser__meta__tags">
+          <!-- #{{tags separator=", "}} -->
+          <time class="post-teaser__meta" datetime="{{date format='YYYY-MM-DD'}}">
+        {{date format="MMMM Do, YYYY"}},
+            </time>
+        </span>
+      {{/if}}
+    </div>
     </header>
-
+  </div>
     <div class="post-teaser__excerpt">
       <p>
-        {{excerpt words="150"}}
+        {{excerpt words="200"}}
         <span class="read-more">
           <a class="read-more__link" href="{{url}}">
             <span>…</span>
@@ -20,18 +28,6 @@
         </span>
       </p>
     </div>
-
-    <footer class="post-teaser__meta">
-      Posted <time class="post-teaser__meta" datetime="{{date format='YYYY-MM-DD'}}">
-        {{date format="MMMM Do, YYYY"}}.
-      </time>
-      {{#if tags}}
-        <span class="post-teaser__meta__tags">
-          <!-- #{{tags separator=", #"}} -->
-          {{tags prefix="Tagged "}}
-        </span>
-      {{/if}}
-    </footer>
  </div> <!-- end post-teaser__text-container -->
 </article>
 <br><br><br>
