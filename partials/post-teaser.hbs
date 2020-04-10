@@ -4,9 +4,6 @@
     <header class="post-teaser__header">
 
       <h2 class="post-teaser__title">
-        {{#if featured}}
-          [Featured]
-        {{/if}}
         <a href="{{url}}">
           {{title}}
         </a>
@@ -16,17 +13,16 @@
     <div class="post-teaser__excerpt">
       <p>
         {{excerpt words="150"}}
-        <span class="read-more">…
+        <span class="read-more">
           <a class="read-more__link" href="{{url}}">
-            <span>continue&nbsp;→</span>
+            <span>…</span>
           </a>
         </span>
       </p>
     </div>
 
     <footer class="post-teaser__meta">
-      Posted by {{#primary_author}}<a href="{{url}}">{{name}}</a>{{/primary_author}} on
-      <time class="post-teaser__meta__date" datetime="{{date format='YYYY-MM-DD'}}">
+      Posted <time class="post-teaser__meta" datetime="{{date format='YYYY-MM-DD'}}">
         {{date format="MMMM Do, YYYY"}}.
       </time>
       {{#if tags}}
