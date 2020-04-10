@@ -106,6 +106,20 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   line-height:calc(18px + 1.75vw);
 }
 
+.read-more__link{
+  font-size:calc(12px + 0.5vw);
+  letter-spacing:calc(0.03vw);
+  background-color: #99ea02;
+  padding: 16px 24px 16px;
+}
+
+
+
+
+
+
+
+
 /* SUBSCRIPTION & MEMBERSHIP STYLES */
 /* ================================= */
 
