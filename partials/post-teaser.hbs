@@ -1,4 +1,4 @@
-<article class="post-teaser {{post_class}} container">
+<article class="post-teaser__container">
   <div class="post-teaser__text-container">
     <header class="post-teaser__header">
       <h2 class="post-teaser__title">
@@ -6,6 +6,9 @@
           {{title}}
         </a>
       </h2>
+    </header>
+  </div>
+    <div class="post-teaser__excerpt">
       <div class="post-teaser__meta">
             {{#if tags}}
         <span class="post-teaser__meta__tags">
@@ -16,9 +19,6 @@
         </span>
       {{/if}}
     </div>
-    </header>
-  </div>
-    <div class="post-teaser__excerpt">
       <p>
         {{excerpt words="200"}}
         <span class="read-more">
