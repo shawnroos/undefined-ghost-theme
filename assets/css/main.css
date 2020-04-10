@@ -22,7 +22,7 @@ a:visited {
 }
 
 a:hover {
-  color: #b8b6ae;
+  color: #1e1e1e;
   text-decoration: underline;
 }
 
@@ -134,9 +134,10 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
 
 .post-teaser__title{
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 7vw;
-  line-height: 6.5vw;
+  font-size: calc(32px + 5vw);
+  line-height:calc(32px + 5vw);
   letter-spacing: -0.4vw;
+  margin-bottom: calc(24px + 2vw);
 }
 
 .post-teaser__excerpt{
