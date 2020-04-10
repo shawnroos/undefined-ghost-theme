@@ -132,7 +132,7 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
 /* ========== */
 
 
-h2.post-teaser__title{
+.post-teaser__title{
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 7vw;
   line-height: 6.5vw;
@@ -140,7 +140,6 @@ h2.post-teaser__title{
 }
 
 .post-teaser__excerpt{
-  max-width: 50%;
   margin-block-start:1.5vh;
   margin-block-end:1.5vh;
   margin-inline-start: 0px;
@@ -164,7 +163,7 @@ h2.post-teaser__title{
 }
 
 .read-more__link{
-  font-family: 'Heebo', sans-serif;
+    font-family: 'Heebo', sans-serif;
   font-size: calc(16px + 0.9vw);
   letter-spacing: -0.08vw;
   line-height: 1.75;
@@ -174,19 +173,11 @@ h2.post-teaser__title{
 
 .post-teaser__container{
   display: block;
-  min-height: 50vh;
+  margin-block-start: 15vh;
 }
 
-.post-teaser__text-container{
-  margin-block-start: 5vh;
-  margin-block-end: 5vh; 
+.post-teaser__text-container{ 
 }
-
-.post-teaser__header{
-  margin-block-start:0.3vh;
-  margin-block-end: 2vh;
-}
-
 
 
 
