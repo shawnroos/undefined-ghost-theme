@@ -1,24 +1,27 @@
-<article class="post-teaser__container">
-      <header class="post-teaser__header">
-      <h2 class="post-teaser__title">
-        <a href="{{url}}">
-          {{title}}
-        </a>
-      </h2>
+<article class="post-teaser__container"> <a class="article__link" href="{{url}}">
+  {{#if feature_image}}
+    <div class="post-teaser__thumbnail" id="{{url}}-post-thumbnail">
+      <img class="bg__image"
+        src="{{img_url feature_image size="m"}}"
+        alt="{{title}}"
+      </img>
+    </div>
+  {{/if}}
+  <div class="post-teaser__text-container">
+     <header class="post-teaser__header"> 
+       <h2 class="post-teaser__title"> {{title}}</h2>
     </header>
     <div class="post-teaser__excerpt">
       <div class="post-teaser__meta">
-            {{#if tags}}
-        <span class="post-teaser__meta__tags">
-          <!-- #{{tags separator=", "}} -->
-          <time class="post-teaser__meta" datetime="{{date format='YYYY-MM-DD'}}">
-        {{date format="MMMM Do, YYYY"}},
-            </time>
-        </span>
+        <time class="post-teaser__meta" datetime="{{date format='YYYY-MM-DD'}}">
+          {{date format="MMMM Do, YYYY"}},
+        </time>
+      {{#if tags}}
+        <span class="post-teaser__meta__tags"></span>
       {{/if}}
     </div>
       <p>
-        {{excerpt words="200"}}
+        {{excerpt words="60"}}
         <span class="read-more">
           <a class="read-more__link" href="{{url}}">
             <span>…</span>
@@ -27,5 +30,5 @@
       </p>
     </div>
  </div> <!-- end post-teaser__text-container -->
-</article>
-<br><br><br>
+</article></a>
+</br></br></br>
