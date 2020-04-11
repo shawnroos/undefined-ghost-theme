@@ -3,22 +3,24 @@
 body {
   background-color: #fcf7f0;
   width: 75vw;
-  max-width: 1400px;
+  width: 100vw;
   margin-right: auto;
   margin-left: auto;
   font-family: 'Heebo', sans-serif;
   line-height: 1.5;
 }
 
+/* links */
+
 a:link {
-  color: #17081f;
-  text-decoration: none;
+  color: #000000;
+  text-decoration: underline #ccc;
 }
 
-/* visited link */
 a:visited {
   color: #17081f;
   text-decoration: none;
+  text-decoration: underline #17081f;
 }
 
 a:hover {
@@ -31,34 +33,89 @@ a:active {
 }
 
 img {
-  max-width: 100%;
+ width: 100%;
+ height: auto;
 }
 
-
-h2 {
+/* Font Headings */
+h1{
+  display: block; 
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
+  margin-block-start: 1em;
+  margin-block-end: 0.25em;
+  font-size: 7vw;
+  font-weight: bold; 
+}
+
+h2 {
   display: block; 
-  margin-block-start:0.3vh;
-  margin-block-end: 0.3vh;
-  font-size: 2em;
+  margin-block-start: 2em;
+  margin-block-end: 0.25em;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: calc(24px + 2vw);
+  line-height: 1.24;
+  letter-spacing: -0.25vw;
   font-weight: bold;
 }
 
+h3 {
+  display: block; 
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight:500;
+  margin-block-start: 3em;
+  margin-block-end: 0.25em;
+  font-size: calc(18px + 1vw);
+  letter-spacing: -0.1vw;
+}
+
+/* Font Paragraphs */
+
 p {
-  margin-block-start:1vh;
-  margin-block-end:1vh;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-block-start: 0.25em;
+  margin-block-end: 1.23em;
   font-family: 'Heebo', sans-serif;
   font-weight: 300;
+  font-size: calc(16px + 0.5vw);
+  line-height: 1.75;
+  color: #3d3f41;
+
 }
+
+/* lists */
+
+ul {
+ margin-block-start: 0.25em;
+ margin-block-end: 1.25em;
+ padding:calc(16px + 2vw);
+ border: 1px solid #ccc;
+}
+
+li {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  margin-bottom: 1em;
+  margin-left: calc(16px + 2vw);
+  font-size: calc(16px + 0.5vw);
+  line-height: 1.75;
+  color: #363434;
+}
+
+ol {
+  margin-block-start: 0.25em;
+  margin-block-end: 1.25em;
+  padding: 2vw;
+  border: 1px solid #ccc;
+ }
+
+ /* Figures */
 
 figure {
   margin-left: auto;
   margin-right: auto;
 }
-w
+
 figcaption {
   text-align: center;
 }
@@ -68,8 +125,8 @@ figcaption {
 }
 
 figure.kg-width-full {
-  width: 75vw;
-  position: relative;w
+ width: 75vw;
+  position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -164,7 +221,7 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
 }
 
 .read-more__link{
-    font-family: 'Heebo', sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: calc(16px + 0.9vw);
   letter-spacing: -0.08vw;
   line-height: 1.75;
@@ -179,6 +236,55 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
 
 .post-teaser__text-container{ 
 }
+
+.post__header{
+ margin-top: 0px;
+ margin-left: 0px;
+ display: flex;
+ width: 100vw;
+ min-height: 30vh;
+ background-color:#0e1c29;
+}
+
+.post__meta {
+ text-transform: uppercase;
+ color: #5C5C5C;
+ font-family: 'IBM Plex Sans', sans-serif;
+ letter-spacing: 0.15rem;
+ font-size:calc(10px + 0.15vw) ;
+ line-height: 1.625;
+ font-weight: 700;
+}
+
+.post__header--content{
+ flex-wrap: wrap;
+ width: 65vw;
+ max-width: 1024px;
+ min width: 300px;
+ margin: auto;
+ align-items: center;
+}
+
+.post__title{
+ margin: 0em;
+ display: block;
+ font-family: 'IBM Plex Sans', sans-serif;
+ font-size: calc(32px + 5vw);
+ line-height: calc(40px + 5vw);
+ letter-spacing: -0.5vw;
+ color: #fcf7f0;  
+}
+
+.post__content{
+ flex-wrap: wrap;
+ width: 60vw;
+ max-width: 1024px;
+ min-width: 300;
+ margin: 4vw auto 4vw;
+}
+
+
+
 
 
 
