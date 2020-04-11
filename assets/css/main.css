@@ -253,7 +253,6 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   justify-content: center;
   margin: auto;
   width: 65vw;
-  max-width: 1024px;
   min-width: 300px;
   min-height: 50vh;
 }
