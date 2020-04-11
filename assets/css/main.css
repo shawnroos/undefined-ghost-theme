@@ -98,6 +98,19 @@ blockquote{
   letter-spacing: -0.125vw;
 }
 
+blockquote::before{
+  position: absolute;
+  z-index: -1;
+  margin-top: 2vh;
+  margin-left: calc( -72px + -5vw );
+  content: "❝";
+  font-family:'IBM Plex Sans', sans-serif ;
+  font-size: 180px;
+  line-height: 0;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(230, 228, 228)
+}
 
 
 
