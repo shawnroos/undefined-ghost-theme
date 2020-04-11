@@ -191,13 +191,12 @@ figure.kg-width-wide {
   margin-right: -25vw;
 }
 
-img.bg__image{ 
-  display: none;
+img.bg__image{
+  display: none; 
+  position: absolute;
   z-index: -1;
   top:1;
   left:1px;
-  height: 50vh;
-  width: auto;
 }
 
 /* IMAGE GALLERY STYLES */
@@ -253,9 +252,10 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  width: 60vw;
+  width: 65vw;
+  max-width: 1024px;
   min-width: 300px;
-
+  min-height: 50vh;
 }
 
 .post-teaser__container::after {
