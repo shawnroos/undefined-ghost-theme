@@ -83,6 +83,24 @@ p {
 
 }
 
+blockquote{
+  display: block; 
+  margin-block-start: 3em;
+  margin-block-end: 0.25em;
+  margin-inline-start:0;
+  margin-inline-end: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic;
+  font-weight:300;  
+  color: #363434;
+  font-size: calc(18px + 1.5vw);
+  line-height: 1.5;
+  letter-spacing: -0.125vw;
+}
+
+
+
+
 /* lists */
 
 ul {
@@ -241,26 +259,29 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
  margin-top: 0px;
  margin-left: 0px;
  display: flex;
- width: 100vw;
+ max-width: 100vw;
  min-height: 30vh;
+ padding: 2.5vh;
  background-color:#0e1c29;
 }
 
 .post__meta {
- text-transform: uppercase;
- color: #5C5C5C;
+ margin-block-start: 1em;
+ margin-block-end: 0.25em;
+ color: rgb(117, 117, 117);
  font-family: 'IBM Plex Sans', sans-serif;
  letter-spacing: 0.15rem;
  font-size:calc(10px + 0.15vw) ;
  line-height: 1.625;
  font-weight: 700;
+ text-transform: uppercase;
 }
 
 .post__header--content{
  flex-wrap: wrap;
  width: 65vw;
  max-width: 1024px;
- min width: 300px;
+ min-width: 300px;
  margin: auto;
  align-items: center;
 }
