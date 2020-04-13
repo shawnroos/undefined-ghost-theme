@@ -19,7 +19,8 @@ a:link {
 }
 
 a:visited {
-  text-decoration: underline #17081f;
+  color: #000000;
+  text-decoration: none;
 }
 
 a:hover {
@@ -61,7 +62,7 @@ h2 {
   margin-block-end: 0.25em;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
-  font-size: calc(24px + 2vw);
+  font-size: calc(20px + 2vw);
   line-height: 1.24;
   letter-spacing: -0.25vw;
   font-weight: bold;
@@ -73,7 +74,7 @@ h3 {
   font-weight:500;
   margin-block-start: 3em;
   margin-block-end: 0.25em;
-  font-size: calc(18px + 1vw);
+  font-size: calc(16px + 1vw);
   letter-spacing: -0.1vw;
 }
 
@@ -84,7 +85,7 @@ h4{
   font-variant-caps: all-small-caps;
   margin-block-start: 3em;
   margin-block-end: 0.25em;
-  font-size: calc(12px + 1vw);
+  font-size: calc(10px + 1vw);
   letter-spacing: 0.2vw;
 }
 
@@ -96,7 +97,7 @@ p {
   margin-block-end: 1.23em;
   font-family: 'Heebo', sans-serif;
   font-weight: 300;
-  font-size: calc(14px + 0.8vw);
+  font-size: calc(14px + 0.5vw);
   line-height: 1.75;
   color: #3d3f41;
 
@@ -191,12 +192,14 @@ figure.kg-width-wide {
   margin-right: -25vw;
 }
 
-img.bg__image{
-  display: none; 
-  position: absolute;
+.post-teaser__thumbnail{ 
+  display: none;
+  position: relative;
+  width: 50vw;
+  margin: -15vh;
   z-index: -1;
-  top:1;
-  left:1px;
+  bottom:1px;
+  right:1px;
 }
 
 /* IMAGE GALLERY STYLES */
@@ -252,14 +255,14 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  width: 65vw;
+  max-width: 65vw;
   min-width: 300px;
-  min-height: 50vh;
+  min-height: 400px;
 }
 
 .post-teaser__container::after {
   display: block;
-  content:',';
+  content:'';
   height: 4px;
   background-color:#e9e3db ;
   width: 100vw;   
@@ -269,7 +272,7 @@ Want something a bit leaner? You can drop the snippet I used in my premium Weblo
 
 .post-teaser__text-container{
   padding-top: 10vh;
-  padding-bottom: 15vh;
+  padding-bottom: 10vh;
 }
 
 
@@ -283,12 +286,17 @@ h2.post-teaser__title{
 }
 
 .post-teaser__excerpt{
+  margin-top: 10vh;
+  max-width:60%;
+  min-width: 280px;
 }
 
 .post-teaser__meta{
   text-transform: uppercase;
   color: #5C5C5C;
   font-family: 'IBM Plex Sans', sans-serif;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   letter-spacing: 0.15rem;
   font-size:calc(10px + 0.15vw) ;
   line-height: 1.625;
@@ -297,7 +305,6 @@ h2.post-teaser__title{
 
 .read-more__link{
   font-family: 'Heebo', sans-serif;
-  font-size: calc(16px + 0.9vw);
   letter-spacing: -0.08vw;
   line-height: 1.75;
   font-weight: 300;
@@ -308,14 +315,13 @@ h2.post-teaser__title{
  margin-top: 0px;
  margin-left: 0px;
  display: flex;
- max-width: 100vw;
- min-height: 30vh;
- padding: 2.5vh;
+ width: 100vw;
+ min-height: 40vh;
  background-color: #e9e3db;
 }
 
 .post__meta {
- margin-block-start: 1em;
+ margin-block-start: 2em;
  margin-block-end: 0.25em;
  color: rgb(117, 117, 117);
  font-family: 'IBM Plex Sans', sans-serif;
@@ -330,17 +336,16 @@ h2.post-teaser__title{
  flex-wrap: wrap;
  width: 65vw;
  max-width: 1024px;
- min-width: 300px;
+ min-width: 280px;
  margin: auto;
- align-items: center;
 }
 
 .post__title{
  margin: 0em;
  display: block;
  font-family: 'IBM Plex Sans', sans-serif;
- font-size: calc(40px + 6vw);
- line-height: calc(40px + 6vw);
+ font-size: calc(24px + 6vw);
+ line-height: 1.2;
  letter-spacing: -0.5vw;
  color:#17081f;  
 }
@@ -349,13 +354,9 @@ h2.post-teaser__title{
  flex-wrap: wrap;
  width: 65vw;
  max-width: 1024px;
- min-width: 300;
- margin: 4vw auto 4vw;
+ min-width: 280px;
+ margin: auto;
 }
-
-
-
-
 
 
 /* SUBSCRIPTION & MEMBERSHIP STYLES */
